@@ -24,6 +24,10 @@ function isMatch(cards) {
     alert("You found a match!");
   } else {
     alert("Sorry, try again.");
+  }  
+  var totalCards = document.getElementsByClassName('card');
+  for (var i = 0; i < totalCards.length; i++) {
+  	totalCards[i].innerHTML = "";
   }
 }
 
